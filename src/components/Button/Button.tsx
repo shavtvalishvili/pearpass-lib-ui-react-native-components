@@ -6,9 +6,7 @@ import {
     iconSizeMap,
     sizeStyleMap,
     variantDisabledStyleMap,
-    variantDisabledTextStyleMap,
     variantStyleMap,
-    variantTextStyleMap,
 } from './Button.config';
 import { ButtonSize, ButtonVariant } from './types';
 import { withIconSize } from '../../utils';
@@ -71,7 +69,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
     const fullWidthStyle = fullWidth ? styles.fullWidth : null;
     const interactionStyle = disabled ? styles.disabled : isLoading ? styles.loading : null;
     const loadingContentStyle = isLoading ? styles.loadingContent : null;
-    const textStyle = disabled ? variantDisabledTextStyleMap[variant] : variantTextStyleMap[variant];
 
     const handleClick: HtmlButtonProps['onClick'] = (e) => {
         onClick?.(e);
@@ -100,7 +97,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
         >
             {hasiconBefore && (
                 <html.span
-                    style={[styles.icon, styles.iconSize(iconSize), textStyle, loadingContentStyle]}
+                    style={[styles.icon, styles.iconSize(iconSize), loadingContentStyle]}
                     aria-hidden={true}
                 >
                     {withIconSize(iconBefore, iconSize)}
@@ -108,12 +105,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function 
             )}
 
             {hasChildren && (
-                <html.span style={[styles.label, textStyle, loadingContentStyle]}>{children}</html.span>
+                <html.span style={[styles.label, loadingContentStyle]}>{children}</html.span>
             )}
 
             {hasiconAfter && (
                 <html.span
-                    style={[styles.icon, styles.iconSize(iconSize), textStyle, loadingContentStyle]}
+                    style={[styles.icon, styles.iconSize(iconSize), loadingContentStyle]}
                     aria-hidden={true}
                 >
                     {withIconSize(iconAfter, iconSize)}

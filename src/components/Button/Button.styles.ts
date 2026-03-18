@@ -178,19 +178,4 @@ export const styles = css.create({
         borderColor: tokens.colorSurfaceDisabled,
         color: tokens.colorTextDisabled,
     },
-    textPrimary: {
-        color: tokens.colorOnPrimary,
-    },
-    textSecondary: {
-        color: tokens.colorTextPrimary,
-    },
-    textTertiary: {
-        color: tokens.colorPrimary,
-    },
-    textDestructive: {
-        color: tokens.colorTextPrimary,
-    },
-    textDisabled: {
-        color: tokens.colorTextDisabled,
-    },
 });

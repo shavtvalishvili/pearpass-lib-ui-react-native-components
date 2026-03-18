@@ -33,18 +33,6 @@ jest.mock('../Button/Button.config', () => ({
     tertiary: {},
     destructive: {}
   },
-  variantTextStyleMap: {
-    primary: {},
-    secondary: {},
-    tertiary: {},
-    destructive: {}
-  },
-  variantDisabledTextStyleMap: {
-    primary: {},
-    secondary: {},
-    tertiary: {},
-    destructive: {}
-  },
   sizeStyleMap: {},
   iconOnlyStyleMap: {},
   iconSizeMap: { small: 16, medium: 20 }
