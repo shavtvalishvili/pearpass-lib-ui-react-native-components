@@ -1,0 +1,12 @@
+// This file is auto-generated. Do not edit it.
+import * as React from "react";
+import type { SVGProps } from "react";
+const SvgDriveFileMoveOutlined = (props: SVGProps<SVGSVGElement>) => (
+  <svg width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l2 2H20zm-6-3h2l-3-3-3 3h2v3h2z"
+    />
+  </svg>
+);
+export default SvgDriveFileMoveOutlined;
