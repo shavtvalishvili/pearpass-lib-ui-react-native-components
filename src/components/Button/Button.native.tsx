@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { rawTokens, useTheme } from '../../theme';
+import { useTheme } from '../../theme/ThemeContext';
+import { rawTokens } from '../../theme/tokens.raw';
 import { iconSizeMap } from './Button.config';
 import { ButtonSize, ButtonVariant } from './types';
 import { ButtonSpinner } from './ButtonSpinner';
@@ -59,7 +60,7 @@ const staticStyles = StyleSheet.create({
     label: {
         fontFamily: rawTokens.fontPrimary,
         fontSize: rawTokens.fontSize14,
-        fontWeight: rawTokens.weightMedium as '500',
+        fontWeight: rawTokens.weightMedium,
     },
 });
 
